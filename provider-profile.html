@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Provider Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="seeker-dashboard.html">Back to Listings</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="provider-profile">
+        <h2>Service Provider Profile</h2>
+        <div class="profile-card">
+            <p><strong>Name:</strong> <span id="providerName">John Doe</span></p>
+            <p><strong>Service Type:</strong> <span id="providerServiceType">Electrician</span></p>
+            <p><strong>Location:</strong> <span id="providerLocation">New York, NY</span></p>
+            <p><strong>Description:</strong> <span id="providerDescription">Experienced electrician with over 5 years of providing top-quality service. Specializes in residential and commercial electrical installations, repairs, and maintenance.</span></p>
+            <p><strong>Contact Information:</strong> <span id="providerContact">johndoe@example.com</span></p>
+            <button onclick="contactProvider()">Contact Provider</button>
+        </div>
+    </section>
+
+    <script>
+        function contactProvider() {
+            alert("Contact information sent to your email!");
+        }
+    </script>
+</body>
+</html>

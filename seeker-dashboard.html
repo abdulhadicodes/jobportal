@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Seeker Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#provider-listings">Provider Listings</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="provider-listings">
+        <h2>Available Service Providers</h2>
+        <div id="listingsContainer">
+            <!-- Sample provider listing -->
+            <div class="provider-card">
+                <h3>John Doe</h3>
+                <p><strong>Service Type:</strong> Electrician</p>
+                <p><strong>Location:</strong> New York, NY</p>
+                <p><strong>Description:</strong> Experienced electrician with 5 years of work.</p>
+                <button onclick="viewProfile('John Doe')">View Profile</button>
+            </div>
+            <!-- Additional provider listings would be dynamically generated -->
+        </div>
+    </section>
+
+    <section id="provider-profile" style="display: none;">
+        <h2>Service Provider Profile</h2>
+        <div id="profileDetails">
+            <p><strong>Name:</strong> <span id="profileName">N/A</span></p>
+            <p><strong>Service Type:</strong> <span id="profileServiceType">N/A</span></p>
+            <p><strong>Location:</strong> <span id="profileLocation">N/A</span></p>
+            <p><strong>Description:</strong> <span id="profileDescription">N/A</span></p>
+            <button onclick="backToListings()">Back to Listings</button>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Portal Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Job Portal</h1>
+        <p>Your trusted platform to connect with reliable service providers and find the services you need.</p>
+    </header>
+
+    <section id="info">
+        <h2>About Our Platform</h2>
+        <p>Our platform connects service seekers with trusted and verified service providers, offering a wide range of services including plumbing, electrical work, and more. Whether you need assistance or want to offer your services, our platform is the ideal place to get started.</p>
+    </section>
+
+    <section id="options">
+        <h2>Get Started</h2>
+        <div class="option-container">
+            <div class="option-card" onclick="navigateTo('seeker')">
+                <h3>As a Service Seeker</h3>
+                <p>Browse and connect with service providers easily.</p>
+                <button>Explore as Seeker</button>
+            </div>
+            <div class="option-card" onclick="navigateTo('provider')">
+              <h3>As a Service Provider</h3>
+              <p>Sign up, set up your profile, and manage your services.</p>
+              <button>Join as Provider</button>
+          </div>
+          
+          <script>
+              function navigateTo(userType) {
+                  if (userType === 'seeker') {
+                      window.location.href = 'seeker-dashboard.html'; // Replace with the actual URL for the seeker section
+                  } else if (userType === 'provider') {
+                      window.location.href = 'provider-login.html'; // This will navigate to the provider login page
+                  }
+              }
+          </script>
+          
+</body>
+</html>

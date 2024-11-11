@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Provider Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Provider Login</h1>
+    </header>
+
+    <section id="login-section">
+        <div class="login-card">
+            <h2>Welcome Back, Service Provider!</h2>
+            <form id="login-form" onsubmit="return handleLogin(event)">
+                <div class="input-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email">
+                </div>
+                <div class="input-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required placeholder="Enter your password">
+                </div>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+        <p>Don't have an account? <a href="provider-register.html">Sign Up</a></p>
+    </section>
+
+    <script>
+        // Mock login validation (replace with real authentication if backend is available)
+        function handleLogin(event) {
+            event.preventDefault(); // Prevent form from submitting the traditional way
+
+            // Retrieve input values
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            // Example of simple validation (replace with real authentication)
+            if (email === 'demo@gmail.com' && password === 'demo') {
+                // Successful login, redirect to provider dashboard
+                window.location.href = 'provider-dashboard.html';
+            } else {
+                // If invalid login, alert the user
+                alert('Invalid credentials. Please try again.');
+            }
+        }
+    </script>
+</body>
+</html>

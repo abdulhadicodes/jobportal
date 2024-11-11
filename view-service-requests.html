@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Requests</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>View Service Requests</h1>
+        <p>Below are the service requests from seekers in your area.</p>
+    </header>
+
+    <section id="service-requests">
+        <div class="requests-card">
+            <h2>Requests List</h2>
+            <div class="request-item">
+                <div class="request-details">
+                    <h3>Service Type: Electrician</h3>
+                    <p><strong>Location:</strong> New York, NY</p>
+                    <p><strong>Contact:</strong> +1 555-6789</p>
+                    <p><strong>Description:</strong> Help with fixing a faulty socket in the living room.</p>
+                </div>
+                <div class="request-actions">
+                    <button class="accept-btn">Accept</button>
+                    <button class="decline-btn">Decline</button>
+                </div>
+            </div>
+
+            <div class="request-item">
+                <div class="request-details">
+                    <h3>Service Type: Plumber</h3>
+                    <p><strong>Location:</strong> Brooklyn, NY</p>
+                    <p><strong>Contact:</strong> +1 555-9876</p>
+                    <p><strong>Description:</strong> Need help with a leaking faucet in the kitchen.</p>
+                </div>
+                <div class="request-actions">
+                    <button class="accept-btn">Accept</button>
+                    <button class="decline-btn">Decline</button>
+                </div>
+            </div>
+
+            <div class="request-item">
+                <div class="request-details">
+                    <h3>Service Type: Carpenter</h3>
+                    <p><strong>Location:</strong> Queens, NY</p>
+                    <p><strong>Contact:</strong> +1 555-4321</p>
+                    <p><strong>Description:</strong> Looking for a carpenter to fix a broken door frame.</p>
+                </div>
+                <div class="request-actions">
+                    <button class="accept-btn">Accept</button>
+                    <button class="decline-btn">Decline</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p><a href="provider-dashboard.html">Back to Dashboard</a></p>
+    </footer>
+
+    <script>
+        // Mock function to simulate accepting or declining a service request
+        document.querySelectorAll('.accept-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                alert('You have accepted the service request!');
+            });
+        });
+
+        document.querySelectorAll('.decline-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                alert('You have declined the service request!');
+            });
+        });
+    </script>
+</body>
+</html>

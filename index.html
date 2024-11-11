@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="provider-dashboard.html">Provider Dashboard</a></li>
+                <li><a href="seeker-dashboard.html">Seeker Dashboard</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <h1>Welcome to the Job Portal</h1>
+        <p>Connect with trusted service providers easily.</p>
+    </section>
+    
+    <section id="provider-dashboard">
+        <h2>Provider Dashboard</h2>
+        <form id="providerProfileForm">
+            <h3>Set Up Your Profile</h3>
+            <input type="text" placeholder="Name" id="providerName" required>
+            <input type="text" placeholder="Service Type" id="providerServiceType" required>
+            <input type="text" placeholder="Location" id="providerLocation" required>
+            <textarea placeholder="Description of Services" id="providerDescription"></textarea>
+            <button type="button" onclick="saveProviderProfile()">Save Profile</button>
+        </form>
+        <div id="providerProfilePreview"></div>
+    </section>
+    
+    <section id="seeker-dashboard">
+        <h2>Service Listings</h2>
+        <div id="providerListings"></div>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
